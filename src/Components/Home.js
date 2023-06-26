@@ -17,16 +17,16 @@ function Home () {
                 <Header />
             </div>
             <div className='section' >
-                <About />
+                {/* <About /> */}
             </div>
             <div clssName='section' id='Skills'>
-                <Skills />
+                {/* <Skills /> */}
             </div>
             <div className='section' id='Projects'>
-                <Projects />
+                {/* <Projects /> */}
             </div>
             <div className='section' id='Contact'>
-                <Contact />
+                {/* <Contact /> */}
             </div>
             </>
     );
