@@ -19,14 +19,16 @@ const projectItem = (image, name, func) => {
   return (
     <Container
       maxWidth='none'
-      onClick={func}
+      onClick={func} 
       sx={{
         display: 'flex', 
-        flexDirection: 'row', 
+            flexDirection: {xs:'column', sm:'row'}, 
+        // flexDirection: 'row', 
         alignItems: 'center',
+        // justifyContent: 'center',
         width: '100%',
         mx: 'auto',
-        mb: '25vh',
+        // mb: '1rem',
         cursor: 'pointer'
       }}       
     >
@@ -41,7 +43,9 @@ const projectItem = (image, name, func) => {
           }}
         />
       </BoxWithHover>
-      <Typography variant='h3'>{name}</Typography>
+        <Box  textAlign='center'>
+          <Typography variant='h3'>{name}</Typography>
+        </Box>
     </Container>
   );
 };
@@ -59,6 +63,7 @@ function Projects () {
           sx={{
             display: 'flex', 
             flexDirection: 'column', 
+            
             alignItems: 'center',
             width: '100%',
             mx: 'auto',
@@ -72,7 +77,7 @@ function Projects () {
             >
               Projects
             </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Box sx={{ display: 'flex', flexDirection: {xs:'column', sm:'row'}}}>
               {/* {projectItem(movie, 'Topher Emby', reroute('/TopherEmby') )}
               {projectItem(commandLine, 'OnlyKyles', reroute('/OnlyKyles') )}
               {projectItem(workout, 'Flat & Iron Abs', reroute('/FlatIronAbs') )} */}

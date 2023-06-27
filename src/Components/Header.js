@@ -33,7 +33,7 @@ const navLink = (toId, text) => {
           variant="h6"
           sx={{
             mx: 2,
-            color: '#e1e1e1',
+            color: {xs:'#000000', sm:'#000000', md:'#e1e1e1'},
             textDecoration: 'none',
             cursor: 'pointer'
           }}
@@ -59,7 +59,7 @@ const links = () => {
         target="_blank"
         sx={{
           mx: 2,
-          color: '#e1e1e1',
+          color: {xs:'#000000', sm:'#000000', md:'#e1e1e1'},
           textDecoration: 'none',
         }}
       >
@@ -95,13 +95,25 @@ function Header() {
     return (
       <>
         <Button onClick={() => toggleDrawer()}>
-          <MenuIcon />
+          <MenuIcon sx={{color: '#e1e1e1'}}/>
         </Button>
         <SwipeableDrawer
           open={isDrawerOpen}
           onOpen={toggleDrawer}
           onClose={toggleDrawer}
           >
+                    <Typography
+          variant="h6"
+          sx={{
+            mx: 2,
+            color: {xs:'#000000', sm:'#000000', md:'#e1e1e1'},
+            textDecoration: 'none',
+            cursor: 'pointer'
+          }}
+          onClick={scrollToTop}
+        >
+            TOPHER LUDLOW
+          </Typography>
           {links()}
         </SwipeableDrawer>
       </>

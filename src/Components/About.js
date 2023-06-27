@@ -50,8 +50,9 @@ function About() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-evenly',
-          mt: '25vh',
-          mb: '25vh',
+          // mt: '25vh',
+          mt: {xs: '15vh', sm: '25vh'}, 
+          mb: '5vh',
           width: '75%',
         }}
         >
@@ -60,8 +61,8 @@ function About() {
             src={Image}
             alt='headshot of Kyle Schneider'
             sx={{
-              height: '35%',
-              width: '35%',
+              height: {xs:'55%', sm:'35%'},
+              width: {xs:'55%', sm:'35%'},
               borderRadius: '10px',
             }}
           />
@@ -83,7 +84,7 @@ id='About'
 maxWidth='none'
 sx={{ 
   mx: 'auto', 
-  mb: '25vh',
+  mb: {xs: '15vh', sm: '25vh'}, 
   width: '75%',
 }}
 >
