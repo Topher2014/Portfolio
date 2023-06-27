@@ -1,22 +1,22 @@
 import ProjectCard from './ProjectCard';
+import image from '../Assets/TopherEmby.png'
 
 
 function TopherEmby() {
     return (
         <ProjectCard
-          title='Chess Is Hard'
-          description='Play chess with other users and save/view game data. Includes castling, en passant capture, pawn promotion, and
-          all win/draw scenarios'
+          title='Topher Emby'
+          description='Web application to enable movie and television file request consolidation for administrators servicing user created group and friend networks in conjunction with programs like Emby, Plex, and Jellyfin'
           links={[
-            ['GitHub', 'https://github.com/kvschneider0/chess'],
-            ['Demo', 'https://youtu.be/43IuuSmvnHs'],
-            ['Live Site', 'https://www.chess.kvschneider.com/login']
+            ['GitHub', 'https://github.com/Topher2014/TopherEmby'],
+            // ['Demo', 'https://youtu.be/43IuuSmvnHs'],
+            ['Live Site', 'https://www.topheremby.com/']
           ]}
-          // image={Logo}
+          image={image}
           notes={[
-            'Created chess game logic from scratch using Python',
-            'Designed a clean and modern website using React with Material UI',
-            'Built a server using Flask to support the front-end and handle chess logic'
+            'Designed and implemented fullstack app using Python Flask, JavaScript XML, and MUI',
+            'Worked across agile development lifecycle to build and maintain code',
+            'Built a search feature to pull from IMDB API to streamline and consolidate user experience'
           ]}
         />
     );

@@ -50,7 +50,6 @@ function About() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-evenly',
-          // mt: '25vh',
           mt: {xs: '15vh', sm: '25vh'}, 
           mb: '5vh',
           width: '75%',
@@ -61,8 +60,8 @@ function About() {
             src={Image}
             alt='headshot of Kyle Schneider'
             sx={{
-              height: {xs:'55%', sm:'35%'},
-              width: {xs:'55%', sm:'35%'},
+              height: {xs:'65%', sm:'35%'},
+              width: {xs:'65%', sm:'35%'},
               borderRadius: '10px',
             }}
           />
