@@ -58,10 +58,10 @@ function About() {
            <Box
             component='img'
             src={Image}
-            alt='headshot of Kyle Schneider'
+            alt='headshot of Topher Ludlow'
             sx={{
-              height: {xs:'65%', sm:'35%'},
-              width: {xs:'65%', sm:'35%'},
+              height: {xs:'65%', sm:'65%', md:'35%'},
+              width: {xs:'65%', sm:'65%', md:'35%'},
               borderRadius: '10px',
             }}
           />
