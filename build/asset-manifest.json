@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.d58f4301.js",
+    "main.js": "/static/js/main.565e95e1.js",
     "static/media/Portrait2.jpg": "/static/media/Portrait2.10bef268d8cae576a7f3.jpg",
+    "static/media/FlatIron.png": "/static/media/FlatIron.f9f7f3ef62edcf1f29dd.png",
+    "static/media/TopherEmby.png": "/static/media/TopherEmby.79ce8f5076450dbf0e50.png",
     "static/media/movie.png": "/static/media/movie.ef55a60183c37c7d1fbc.png",
     "static/media/fingerprint_of_gods.jpg": "/static/media/fingerprint_of_gods.43ddd86bf4ad57bb52eb.jpg",
     "static/media/chapter-house-dune.jpg": "/static/media/chapter-house-dune.559dc399ba63de248937.jpg",
@@ -11,14 +13,15 @@
     "static/media/workout.png": "/static/media/workout.5b941b9e28384cac32db.png",
     "static/media/react.png": "/static/media/react.45efea17bbb80debfd2a.png",
     "static/media/commandLine.png": "/static/media/commandLine.9c43cd6f67e0f0efb1bb.png",
+    "static/media/OnlyKyles.png": "/static/media/OnlyKyles.bcb4b613ae58105d1e6f.png",
     "static/media/numpy.png": "/static/media/numpy.c46cbb2951454db4aa1d.png",
     "static/media/python.png": "/static/media/python.e1430e50fe16edba12fd.png",
     "static/media/html.png": "/static/media/html.981370ff4c981156f431.png",
     "static/media/css.png": "/static/media/css.8bb7633da3e758e43421.png",
     "index.html": "/index.html",
-    "main.d58f4301.js.map": "/static/js/main.d58f4301.js.map"
+    "main.565e95e1.js.map": "/static/js/main.565e95e1.js.map"
   },
   "entrypoints": [
-    "static/js/main.d58f4301.js"
+    "static/js/main.565e95e1.js"
   ]
 }
