@@ -120,9 +120,10 @@ A self described techie with a strong work ethic, anything I’m not currently p
                     src={book} 
                     alt='' 
                     sx={{
-                      height: '18vw',
-                      width: '12vw',
-                      mx: 2,
+                      height: {md: '19vw', xs: '27vw'},
+                      width: {md: '13vw', xs: '21vw'},
+                      mx: {md:2, xs:1},
+                      // mb: {md: '15vh', xs: '5vh'},
                       transition: '0.5s',
                       '&:hover': { transform: 'scale(1.05)' }
                     }}
