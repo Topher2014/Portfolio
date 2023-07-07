@@ -2,11 +2,12 @@ import Image from '../Assets/Portrait2.jpg'
 import book1 from '../Assets/chapter-house-dune.jpg'
 import book2 from '../Assets/fingerprint_of_gods.jpg'
 import book3 from '../Assets/economics.jpg'
+import book4 from '../Assets/immortalIrishman.jpg'
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-const books = [book1, book2, book3]
+const books = [book4, book1, book2, book3]
 
 const gridItem = (name, path) => {
     return (
