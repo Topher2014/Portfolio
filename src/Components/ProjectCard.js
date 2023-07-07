@@ -48,9 +48,9 @@ sx={{
     <Typography 
     variant="h6" 
     noWrap
-    style={{
+    sx={{
         cursor: 'pointer',
-        marginLeft: '-.47rem'
+        marginLeft: {lg:'-.47rem'}
     }}
     onClick={() => {
           if (window.location.pathname !== '/') {
