@@ -11,7 +11,8 @@ import { Link as ScrollLink } from 'react-scroll';
 import { useMediaQuery } from '@mui/material';
 
 import resume_pdf from '../Assets/Resume.pdf';
-import github_img from '../Assets/github.png';
+import github_img from '../Assets/githubWhite.png';
+import github_img2 from '../Assets/githubBlack.png'
 import linkedin_img from '../Assets/linkedin.png';
 
 const navLink = (toId, text) => {
@@ -44,42 +45,45 @@ const navLink = (toId, text) => {
     );
 };
 
-const links = () => {
-  return (
-    <>  
-      {navLink('About', 'ABOUT')}
-      {navLink('Skills', 'SKILLS')}
-      {navLink('Projects', 'PROJECTS')}
-      {navLink('Contact', 'CONTACT')}
-      
-      <Typography
-        variant="h6"
-        component="a"
-        href={resume_pdf}
-        target="_blank"
-        sx={{
-          mx: 2,
-          color: {xs:'#000000', sm:'#000000', md:'#e1e1e1'},
-          textDecoration: 'none',
-        }}
-      >
-        RESUME
-      </Typography>
-
-      <Link href="https://github.com/Topher2014" target="_blank">
-        <Box component="img" src={github_img} alt="" sx={{ mx: 2, height: '2rem' }} />
-      </Link>
-
-      <Link href="https://www.linkedin.com/in/topherludlow" target="_blank">
-        <Box component="img" src={linkedin_img} alt="" sx={{ mx: 2, height: '2rem' }} />
-      </Link>
-    </>
-  );
-};
 
 
 function Header() {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down(1080));
+  const links = () => {
+    return (
+      <>  
+        {navLink('About', 'ABOUT')}
+        {navLink('Skills', 'SKILLS')}
+        {navLink('Projects', 'PROJECTS')}
+        {navLink('Contact', 'CONTACT')}
+        
+        <Typography
+          variant="h6"
+          component="a"
+          href={resume_pdf}
+          target="_blank"
+          sx={{
+            mx: 2,
+            color: {xs:'#000000', sm:'#000000', md:'#e1e1e1'},
+            textDecoration: 'none',
+          }}
+        >
+          RESUME
+        </Typography>
+
+        <Link href="https://github.com/Topher2014" target="_blank">
+        {isMobile ? (
+            <Box component="img" src={github_img2} alt="" sx={{ mx: 2, height: '2rem' }} />
+          ) : (
+            <Box component="img" src={github_img} alt="" sx={{ mx: 2, height: '2rem' }} />
+          )}      </Link>
+
+        <Link href="https://www.linkedin.com/in/topherludlow" target="_blank">
+          <Box component="img" src={linkedin_img} alt="" sx={{ mx: 2, height: '2rem' }} />
+        </Link>
+      </>
+    );
+  };
   
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const toggleDrawer = (event) => {
