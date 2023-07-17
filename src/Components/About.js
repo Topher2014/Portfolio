@@ -1,13 +1,17 @@
 import Image from '../Assets/Portrait2.jpg'
-import book1 from '../Assets/chapter-house-dune.jpg'
-import book2 from '../Assets/fingerprint_of_gods.jpg'
-import book3 from '../Assets/economics.jpg'
-import book4 from '../Assets/immortalIrishman.jpg'
+import book1 from '../Assets/Covers/chapter-house-dune.jpg'
+import book2 from '../Assets/Covers/fingerprint_of_gods.jpg'
+import book3 from '../Assets/Covers/economics.jpg'
+import book4 from '../Assets/Covers/immortalIrishman.jpg'
+import book5 from '../Assets/Covers/heretics-of-dune-1.jpg'
+import book6 from '../Assets/Covers/caesar.jpg'
+import book7 from '../Assets/Covers/return-of-the-king.jpg'
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-const books = [book4, book1, book2, book3]
+const currentBooks = [book6, book4, book2, book3]
+const pastBooks = [book1, book5, book7]
 
 const gridItem = (name, path) => {
     return (
@@ -97,7 +101,6 @@ A self described techie with a strong work ethic, anything I’m not currently p
       </Typography>
   </Box>
   <Box >
-      {/* Books */}
       <Typography 
         variant='h3' 
         textAlign='center'
@@ -112,7 +115,43 @@ A self described techie with a strong work ethic, anything I’m not currently p
         justifyContent='center'  
         alignItems='center'
       >
-          {books.map((book, index) => {
+          {currentBooks.map((book, index) => {
+              return (
+                  <Box 
+                    key={index}
+                    component='img'   
+                    src={book} 
+                    alt='' 
+                    sx={{
+                      height: {md: '19vw', xs: '27vw'},
+                      width: {md: '13vw', xs: '21vw'},
+                      mx: {md:2, xs:1},
+                      // mb: {md: '15vh', xs: '5vh'},
+                      transition: '0.5s',
+                      '&:hover': { transform: 'scale(1.05)' }
+                    }}
+                  mt={2}
+                  />
+              );
+          })}
+      </Box>
+  </Box>
+  <Box >
+      <Typography 
+        variant='h3' 
+        textAlign='center'
+        sx={{ mt: '5vh' }}
+      >
+        Last 3 Books I've Read
+        <br/>
+      </Typography>
+      <Box 
+        display='flex' 
+        flexDirection='row' 
+        justifyContent='center'  
+        alignItems='center'
+      >
+          {pastBooks.map((book, index) => {
               return (
                   <Box 
                     key={index}
