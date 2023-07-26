@@ -10,7 +10,7 @@ import { Typography } from '@mui/material';
 import { Link as ScrollLink } from 'react-scroll';
 import { useMediaQuery } from '@mui/material';
 
-import resume_pdf from '../Assets/Resume.pdf';
+// import resume_pdf from '../Assets/Resume.pdf';
 import github_img from '../Assets/githubWhite.png';
 import github_img2 from '../Assets/githubBlack.png'
 import linkedin_img from '../Assets/linkedin.png';
@@ -60,7 +60,7 @@ function Header() {
         <Typography
           variant="h6"
           component="a"
-          href={resume_pdf}
+          href='https://docs.google.com/document/d/1wHXmc9S2mm0Sm_0pqHT6RAHcmE2cGWG8Qsy25w9zZpA/edit'
           target="_blank"
           sx={{
             mx: 2,
