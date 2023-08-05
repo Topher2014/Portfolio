@@ -60,7 +60,7 @@ function Projects () {
             Projects
           </Typography>
 
-            <Grid container spacing={4} sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, alignItems: 'center', mb: {md: '10vh', sm:'2vh', xs: '2vh'}}} columns={{md: 3}}>
+            <Grid container spacing={4} sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, alignItems: 'center', mb: {md: '10vh', sm:'3vh', xs: '3vh'}}} columns={{md: 3}}>
                 {projectItem(aidSupply, 'AidSupply', reroute('/AidSupply') )}
                 {projectItem(baseBeta, 'BaseBeta', reroute('/BaseBeta') )}
                 {projectItem(movie, 'Topher Emby', reroute('/TopherEmby') )}
