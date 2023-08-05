@@ -14,6 +14,11 @@ import pandas_img from '../Assets/technologies/pandas.png'
 import github_img from '../Assets/technologies/github2.png'
 import node_img from '../Assets/technologies/node.png'
 import render_img from '../Assets/technologies/render.png'
+import kotlin_img from '../Assets/technologies/kotlin.png'
+import cplusplus_img from '../Assets/technologies/c++.png'
+import c_img from '../Assets/technologies/c.png'
+import ios_img from '../Assets/technologies/ios.png'
+import android_img from '../Assets/technologies/android.png'
 import { useMediaQuery } from '@mui/material';
 
 function Skills () {
@@ -83,6 +88,12 @@ function Skills () {
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <Grid container spacing={4}>
               <Grid item xs={12} sm={6} md={4} lg={3}>
+                {gridItem('React', react_img)}
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={3}>
+                {gridItem('JavaScript', javascript_img)}
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('Python', python_img)}
               </Grid>
               <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -92,19 +103,28 @@ function Skills () {
                 {gridItem('NumPy', numpy_img)}
               </Grid>
               <Grid item xs={12} sm={6} md={4} lg={3}>
-                {gridItem('Pandas', pandas_img)}
+                {gridItem('Kotlin', kotlin_img)}
               </Grid>
               <Grid item xs={12} sm={6} md={4} lg={3}>
-                {gridItem('JavaScript', javascript_img)}
+                {gridItem('Android', android_img)}
               </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={3}>
+                {gridItem('iOS', ios_img)}
+              </Grid>
+              {/* <Grid item xs={12} sm={6} md={4} lg={3}>
+                {gridItem('Pandas', pandas_img)}
+              </Grid> */}
               <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('NodeJS', node_img)}
               </Grid>              
               <Grid item xs={12} sm={6} md={4} lg={3}>
-                {gridItem('React', react_img)}
+                {gridItem('Material UI', mui_img)}
               </Grid>
               <Grid item xs={12} sm={6} md={4} lg={3}>
-                {gridItem('Material UI', mui_img)}
+                {gridItem('C++', cplusplus_img)}
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} lg={3}>
+                {gridItem('C', c_img)}
               </Grid>
               <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('HTML5', html_img)}

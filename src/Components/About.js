@@ -10,8 +10,8 @@ import book7 from '../Assets/Covers/return-of-the-king.jpg'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-const currentBooks = [book6, book4, book2, book3]
-const pastBooks = [book1, book5, book7]
+const currentBooks = [book6, book2, book3]
+const pastBooks = [book4, book1, book5]
 
 const gridItem = (name, path) => {
     return (

@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 
 import movie from '../Assets/movie.png'
 import workout from '../Assets/workout.png'
 import commandLine from '../Assets/commandLine.png'
+import aidSupply from '../Assets/aidSupplyLogo.png'
+import baseBeta from '../Assets/baseBetaLogo.webp'
 
 const BoxWithHover = styled(Box)`
   transition: .5s;
@@ -17,38 +20,16 @@ const BoxWithHover = styled(Box)`
 
 const projectItem = (image, name, func) => {
   return (
-    <Container
-      maxWidth='none'
-      onClick={func} 
-      sx={{
-        display: 'flex', 
-            flexDirection: {xs:'column', sm:'row'}, 
-        // flexDirection: 'row', 
-        alignItems: 'center',
-        // justifyContent: 'center',
-        width: '100%',
-        mx: 'auto',
-        // mb: '1rem',
-        cursor: 'pointer'
-      }}       
-    >
-      <BoxWithHover>
-        <Box 
-          component='img'
-          src={image}
-          alt={`${name} logo`}
-          sx={{
-            height: '10vw',
-            mr: 2,
-          }}
-        />
-      </BoxWithHover>
-        <Box  textAlign='center'>
+      <>
+      <Grid item  md={1}>
+        <BoxWithHover sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} onClick={func}>
+          <Box component='img' src={image} sx={{height: '15vw', width: '15vw', borderRadius: '5vw'}}/>
           <Typography variant='h3'>{name}</Typography>
-        </Box>
-    </Container>
-  );
-};
+        </BoxWithHover>
+      </Grid>
+      </>
+);
+}
 
 function Projects () {
     const navigate = useNavigate();
@@ -59,29 +40,36 @@ function Projects () {
 
     return (
         <Container
-          maxWidth='none'
-          sx={{
-            display: 'flex', 
-            flexDirection: 'column', 
-            
-            alignItems: 'center',
-            width: '100%',
-            mx: 'auto',
-            mb: '25vh'
-          }}        
+        id='Projects'
+        maxWidth='none'
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'space-evenly',
+          mt: {xs: '15vh', sm: '25vh'}, 
+          mb: '25vh',
+          width: '75%',
+        }}
         >
-            <Typography 
-              id='projects'
-              variant='h2' 
-              my={4}
-            >
-              Projects
-            </Typography>
-            <Box sx={{ display: 'flex', flexDirection: {xs:'column', sm:'row'}}}>
-              {projectItem(movie, 'Topher Emby', reroute('/TopherEmby') )}
-              {projectItem(commandLine, 'OnlyKyles', reroute('/OnlyKyles') )}
-              {projectItem(workout, 'Flat & Iron Abs', reroute('/FlatIronAbs') )}
-            </Box>
+          <Typography 
+            id='skills'
+            variant='h2'
+            my={4} 
+          >
+            Projects
+          </Typography>
+
+            <Grid container spacing={4} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', mb: '10vh'}} columns={{md: 3}}>
+                {projectItem(aidSupply, 'AidSupply', reroute('/AidSupply') )}
+                {projectItem(baseBeta, 'BaseBeta', reroute('/BaseBeta') )}
+                {projectItem(movie, 'Topher Emby', reroute('/TopherEmby') )}
+            </Grid>
+            <Grid container spacing={4} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center'}} columns={{md: 2}}>
+                {projectItem(workout, 'Flat & Iron Abs', reroute('/FlatIronAbs') )}
+                {projectItem(commandLine, 'OnlyKyles', reroute('/OnlyKyles') )}
+            </Grid>
+
         </Container>
     );
 }
