@@ -47,7 +47,7 @@ function Projects () {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'space-evenly',
-          mt: {xs: '15vh', sm: '25vh'}, 
+          // mt: {xs: '15vh', sm: '25vh'}, 
           mb: '25vh',
           width: '75%',
         }}
@@ -60,8 +60,7 @@ function Projects () {
             Projects
           </Typography>
 
-            {/* <Grid container spacing={4} sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, alignItems: 'center', mb: '10vh'}} columns={{md: 3, sm: 2}}> */}
-            <Grid container spacing={4} sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, alignItems: 'center', mb: '10vh'}} columns={{md: 3}}>
+            <Grid container spacing={4} sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, alignItems: 'center', mb: {md: '10vh', sm:'2vh'}}} columns={{md: 3}}>
                 {projectItem(aidSupply, 'AidSupply', reroute('/AidSupply') )}
                 {projectItem(baseBeta, 'BaseBeta', reroute('/BaseBeta') )}
                 {projectItem(movie, 'Topher Emby', reroute('/TopherEmby') )}
