@@ -60,12 +60,13 @@ function Projects () {
             Projects
           </Typography>
 
-            <Grid container spacing={4} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', mb: '10vh'}} columns={{md: 3}}>
+            {/* <Grid container spacing={4} sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, alignItems: 'center', mb: '10vh'}} columns={{md: 3, sm: 2}}> */}
+            <Grid container spacing={4} sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, alignItems: 'center', mb: '10vh'}} columns={{md: 3}}>
                 {projectItem(aidSupply, 'AidSupply', reroute('/AidSupply') )}
                 {projectItem(baseBeta, 'BaseBeta', reroute('/BaseBeta') )}
                 {projectItem(movie, 'Topher Emby', reroute('/TopherEmby') )}
             </Grid>
-            <Grid container spacing={4} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center'}} columns={{md: 2}}>
+            <Grid container spacing={4} sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, alignItems: 'center', mb: '10vh'}} columns={{md: 2}}>
                 {projectItem(workout, 'Flat & Iron Abs', reroute('/FlatIronAbs') )}
                 {projectItem(commandLine, 'OnlyKyles', reroute('/OnlyKyles') )}
             </Grid>
