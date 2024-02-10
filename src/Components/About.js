@@ -74,11 +74,17 @@ function About() {
             <Typography variant='h1'>Topher Ludlow</Typography>
             <Typography variant='h2'>Software Developer</Typography>
             <Typography>
-              I am a software developer with a passion for learning and creating. 
+              I am a software developer with a passion for learning and creating, 
               <br />
-              I use my background in communications, management, and a love of technology 
+              using my background in communications, management, and a love of technology 
               <br />
               to solve problems and build applications.
+              <br />
+              I am always looking for work opportunities to develop and/enhance websites and applications 
+              <br />
+              using the most efficient tools and platform to meet your requirements. 
+              <br />
+              Please use the contact link to send me an email describing your needs and timeframe and I will respond promptly
             </Typography>
           </Box>
         </Container>
