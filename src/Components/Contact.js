@@ -26,6 +26,9 @@ function Contact() {
                 LinkedIn: <a href="https://www.linkedin.com/in/topherludlow/" target="_blank" rel="noopener noreferrer">topherludlow</a> 
             </Typography>            
             <Typography variant={textSize} textAlign='center'>
+                Book Time: <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0huejMDFxiUmR8Z30Gvgt1hERoq2e9H7TTZoBRx14Y1Xxd00Q8cLcU0F3Uf1SpmvINCYRXlLRq" target="_blank" rel="noopener noreferrer">Calendar</a> 
+            </Typography>            
+            <Typography variant={textSize} textAlign='center'>
                 GitHub: <a href="https://github.com/Topher2014" target="_blank" rel="noopener noreferrer">Topher2014</a> 
             </Typography>
             <Typography variant={textSize} textAlign='center'>
