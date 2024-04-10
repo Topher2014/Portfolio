@@ -22,9 +22,9 @@ function Home () {
             <div clssName='section' id='Skills'>
                 <Skills />
             </div>
-            <div className='section' id='Projects'>
+            {/* <div className='section' id='Projects'>
                 <Projects />
-            </div>
+            </div> */}
             <div className='section' id='Contact'>
                 <Contact />
             </div>

@@ -52,9 +52,9 @@ function Header() {
   const links = () => {
     return (
       <>  
-        {navLink('About', 'ABOUT')}
+        {/* {navLink('About', 'ABOUT')} */}
         {navLink('Skills', 'SKILLS')}
-        {navLink('Projects', 'PROJECTS')}
+        {/* {navLink('Projects', 'PROJECTS')} */}
         {navLink('Contact', 'CONTACT')}
         
         <Typography
@@ -145,6 +145,7 @@ function Header() {
       sx={{
         height: '4rem',
         backgroundColor: '#000000',
+        borderRadius: '8px',
         py: '.9rem',
       }}
     >

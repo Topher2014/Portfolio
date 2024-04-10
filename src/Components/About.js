@@ -68,23 +68,19 @@ function About() {
               height: {xs:'65%', sm:'65%', md:'35%'},
               width: {xs:'65%', sm:'65%', md:'35%'},
               borderRadius: '10px',
+              mr: '5rem'
             }}
           />
           <Box textAlign='center'>
             <Typography variant='h1'>Topher Ludlow</Typography>
             <Typography variant='h2'>Software Developer</Typography>
-            <Typography>
+            <Typography sx={{maxWidth: '40rem'}}>
               I am a software developer with a passion for learning and creating, 
-              <br />
               using my background in communications, management, and a love of technology 
-              <br />
               to solve problems and build applications.
-              <br />
               I am always looking for work opportunities to develop and/enhance websites and applications 
-              <br />
               using the most efficient tools and platform to meet your requirements. 
-              <br />
-              Please use the contact link to send me an email describing your needs and timeframe and I will respond promptly
+              Please use the contact link to send me an email describing your needs and timeframe and I will respond promptly.
             </Typography>
           </Box>
         </Container>
@@ -94,18 +90,18 @@ id='About'
 maxWidth='none'
 sx={{ 
   mx: 'auto', 
-  mb: {xs: '15vh', sm: '25vh'}, 
+  mb: {xs: '10vh', sm: '10vh'}, 
   width: '75%',
 }}
 >
-  <Typography variant='h2' textAlign='center' >About</Typography>
+  {/* <Typography variant='h2' textAlign='center' >About</Typography>
   <Box mt={2}>
       <Typography >
       I’m a software engineer and a US veteran with a background in communications. I recently finished Flatiron’s software development program where I learned javascript and python, though I have experience with other languages and technologies as well. 
 My last job was with an emergency services agency during the height of the covid-19 pandemic; I’m someone who thrives under pressure and who always keeps a professional demeanor in the workplace. 
 A self described techie with a strong work ethic, anything I’m not currently proficient in I can learn quickly. I’d appreciate the opportunity to talk to you more about how I can become an asset to your company.
       </Typography>
-  </Box>
+  </Box> */}
   <Box >
       <Typography 
         variant='h3' 
@@ -142,7 +138,7 @@ A self described techie with a strong work ethic, anything I’m not currently p
           })}
       </Box>
   </Box>
-  <Box >
+  {/* <Box >
       <Typography 
         variant='h3' 
         textAlign='center'
@@ -177,7 +173,7 @@ A self described techie with a strong work ethic, anything I’m not currently p
               );
           })}
       </Box>
-  </Box>
+  </Box> */}
 </Container>
         </>
 

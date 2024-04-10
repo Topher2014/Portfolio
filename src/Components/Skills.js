@@ -23,6 +23,7 @@ import { useMediaQuery } from '@mui/material';
 
 function Skills () {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+  const isMedium = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
 
   const getItemText = (name) => {
@@ -42,15 +43,17 @@ function Skills () {
 
   const gridItem = (name, path) => {
     return (
+        <Grid item xs={6} lg={3} 
+        >
       <Container
         sx={{
-          width: { sm: '15rem', xs: '7rem' },
-          height: { sm: '8rem', xs: '3rem' },
+          width: { sm: '12rem', xs: '7rem' },
+          height: { sm: '6rem', xs: '3rem' },
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
           bgcolor: '#292929',
-          m: 'auto',
+          // m: 'auto',
           p: 1,
           borderRadius: '10px',
           transition: '0.5s',
@@ -58,24 +61,24 @@ function Skills () {
         }}
       >
         <Box component='img' src={path} alt={`${name} logo`} height='75%' mr={2} />
-        {/* <Typography color='#e1e1e1'>{isMobile && name === 'JavaScript' ? 'JS' : name}</Typography> */}
         <Typography color='#e1e1e1'>{getItemText(name)}</Typography>
       </Container>
+        </Grid>
     );
   };
 
     return (
-        <Container 
+        <Box 
           maxWidth='none'
           id='Skills'
           sx={{
             display: 'flex', 
+            // justifyContent: 'center',
             flexDirection: 'column', 
             alignItems: 'center',
             width: '75%',
             mx: 'auto',
             mb: {xs: '10vh', sm: '25vh'}, 
-            // mb: '25vh'
           }}
         >
           <Typography 
@@ -85,62 +88,26 @@ function Skills () {
           >
             Skills
           </Typography>
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Grid container spacing={4}>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
+            <Grid container columnSpacing={5} rowSpacing={1} >
                 {gridItem('React', react_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('JavaScript', javascript_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('Python', python_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('Flask', flask_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('NumPy', numpy_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('Kotlin', kotlin_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('Android', android_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('iOS', ios_img)}
-              </Grid>
-              {/* <Grid item xs={12} sm={6} md={4} lg={3}>
-                {gridItem('Pandas', pandas_img)}
-              </Grid> */}
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('NodeJS', node_img)}
-              </Grid>              
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('Material UI', mui_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('C++', cplusplus_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('C', c_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('HTML5', html_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('CSS3', css_img)}
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
                 {gridItem('GitHub', github_img)}
-              </Grid>    
-              <Grid item xs={12} sm={6} md={4} lg={3}>
-                {gridItem('Render', render_img)}
-              </Grid>                            
+                {gridItem('Render', render_img, true)}
+
             </Grid>
-          </Box>
-      </Container>
+      </Box>
     );
 }
 
