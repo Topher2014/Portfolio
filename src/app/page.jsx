@@ -8,15 +8,16 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import logoTlservices from '@/images/logos/tlservices.png'
+import logoAidSupply from '@/images/logos/aidsupply.png'
+import logoEmsa from '@/images/logos/emsa.png'
+import logoGlasshouse from '@/images/logos/glasshouse.png'
+import logoArmy from '@/images/logos/army.png'
+import image1 from '@/images/photos/washington.jpg'
+import image2 from '@/images/photos/huskies.jpg'
+import image3 from '@/images/photos/portrait.jpg'
+import image4 from '@/images/photos/keyboard.jpg'
+import image5 from '@/images/photos/glacier.jpg'
 
 function BriefcaseIcon(props) {
   return (
@@ -45,7 +46,7 @@ function ArrowDownIcon(props) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
       <path
-        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
+        d="M7.25 4.75 10.75 8m0 0-3.5 3.25M10.75 8h-8.5"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -73,7 +74,7 @@ function Role({ role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full ring-1 shadow-md shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center ">
         <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -102,35 +103,42 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'TL Services',
+      title: 'Software Developer',
+      logo: logoTlservices,
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
+      company: 'Aid Supply',
+      title: 'Software Developer',
+      logo: logoAidSupply,
+      start: '2024',
+      end: '2023',
+    },
+    {
+      company: 'Emergency Medical Services Authority',
+      title: 'Travel Logistics Coordinator',
+      logo: logoEmsa,
+      start: '2020',
+      end: '2021',
+    },
+    {
+      company: 'Glass House',
+      title: 'Operations Coordinator',
+      logo: logoGlasshouse,
+      start: '2013',
       end: '2019',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'United States Army',
+      title: 'Signal Support Systems Specialist',
+      logo: logoArmy,
+      start: '2009',
+      end: '2013',
     },
   ]
 
@@ -145,8 +153,8 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button href="https://docs.google.com/document/d/1wHXmc9S2mm0Sm_0pqHT6RAHcmE2cGWG8Qsy25w9zZpA/edit?tab=t.0" target="_noblank" rel="noopener noreferrer" variant="secondary" className="group mt-6 w-full">
+        Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
@@ -187,22 +195,25 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software designer, founder, and amateur astronaut.
+            Software developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I am a software developer with a passion for learning and creating, using my background in communications, 
+            management, and a love of technology to solve problems and build applications. I am always looking for work 
+            opportunities to develop and/enhance websites and applications using the most efficient tools and platform to meet your requirements. 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="#"
+              href="https://github.com/Topher2014"
+              target="_noblank"
+              rel="noopener noreferrer"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/topherludlow/"
+              target="_noblank"
+              rel="noopener noreferrer"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
