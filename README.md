@@ -1,42 +1,29 @@
-# Spotlight
+# Personal Portfolio
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+This repository contains the code for my personal portfolio website.
 
-## Getting started
+## Overview
 
-To get started with this template, first install the npm dependencies:
+My portfolio website showcases my skills, projects, and professional experience. It serves as a digital resume and a place to demonstrate my web development capabilities.
 
-```bash
-npm install
-```
+## Technologies Used
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
+- React
+- Tailwind CSS
+- JavaScript
+- HTML/CSS
 
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
+## Features
 
-Next, run the development server:
+- Responsive design
+- Project showcase
+- Work experience timeline
+- Contact information
 
-```bash
-npm run dev
-```
+## Visit the Site
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+You can view the live site at: [topherludlow.com](https://topherludlow.com)
 
-## Customizing
+## Contact
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+Feel free to reach out to me at [topherludlow@protonmail.com](mailto:topherludlow@protonmail.com) or connect with me on [LinkedIn](https://linkedin.com/in/topherludlow).
