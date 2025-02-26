@@ -10,7 +10,7 @@ export const metadata = {
       'Topher Ludlow - Software Developer',
   },
   description:
-    'I am a software developer with a passion for learning and creating, using my background in communications, management, and a love of technology to solve problems and build applications. I am always looking for work opportunities to develop and enhance websites and applications using the most efficient tools and platform to meet your requirements.',
+    'I am a software developer with a passion for learning and creating, using my background in communications, management, and a love of technology to solve problems and build applications. I am always looking for work opportunities to develop websites and applications using the most efficient tools and platforms that meet your requirements.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

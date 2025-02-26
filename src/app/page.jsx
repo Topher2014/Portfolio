@@ -201,7 +201,7 @@ export default async function Home() {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I am a software developer with a passion for learning and creating, using my background in communications, 
             management, and a love of technology to solve problems and build applications. I am always looking for work 
-            opportunities to develop and enhance websites and applications using the most efficient tools and platform to meet your requirements. 
+            opportunities to develop websites and applications using the most efficient tools and platforms that meet your requirements. 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
