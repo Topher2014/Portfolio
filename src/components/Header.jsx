@@ -215,6 +215,7 @@ function Avatar({ large = false, className, ...props }) {
           large ? 'h-16 w-16' : 'h-9 w-9',
         )}
         priority
+        unoptimized
       />
     </Link>
   )
