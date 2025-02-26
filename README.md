@@ -8,7 +8,7 @@ My portfolio website showcases my skills, projects, and professional experience.
 
 ## Technologies Used
 
-- React
+- NextJS
 - Tailwind CSS
 - JavaScript
 - HTML/CSS
