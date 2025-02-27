@@ -11,6 +11,9 @@ const nextConfig = {
       '/articles/*': ['./src/app/articles/**/*.mdx'],
     },
   },
+  images: {
+    unoptimized: true,
+  }
 }
 
 const withMDX = nextMDX({
