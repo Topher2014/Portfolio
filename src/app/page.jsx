@@ -153,7 +153,7 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="https://docs.google.com/document/d/1wHXmc9S2mm0Sm_0pqHT6RAHcmE2cGWG8Qsy25w9zZpA/edit?tab=t.0" target="_noblank" rel="noopener noreferrer" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://docs.google.com/document/d/1wE_ao2u8SoogD04EHu2tUfiMn_khqY_3dsRHDxgav2A/edit?tab=t.0" target="_noblank" rel="noopener noreferrer" variant="secondary" className="group mt-6 w-full">
         Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
