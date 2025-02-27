@@ -21,7 +21,7 @@ export const metadata = {
   description: 'I am a software developer with a passion for learning and creating, using my background in communications, management, and a love of technology to solve problems and build applications.',
   images: [
     {
-      url: '/images/photos/portrait.jpg',
+      url: '/src/images/photos/portrait.jpg',
       width: 1200,
       height: 630,
       alt: 'Topher Ludlow - Software Developer',
