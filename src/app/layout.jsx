@@ -1,4 +1,5 @@
 import { Providers } from '@/app/providers'
+import { CustomHead } from '@/components/CustomHead'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
@@ -16,24 +17,14 @@ export const metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
-  openGraph: {
-  title: 'Topher Ludlow - Software Developer',
-  description: 'I am a software developer with a passion for learning and creating, using my background in communications, management, and a love of technology to solve problems and build applications.',
-  images: [
-    {
-      url: 'https://topherludlow.com/images/portrait.jpg',
-      width: 1200,
-      height: 630,
-      alt: 'Topher Ludlow - Software Developer',
-    },
-  ],
-  type: 'website',
-  },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <head>
+        <CustomHead />
+      </head>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="flex w-full">
