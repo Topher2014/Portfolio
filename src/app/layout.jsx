@@ -16,6 +16,19 @@ export const metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
+  openGraph: {
+  title: 'Topher Ludlow - Software Developer',
+  description: 'I am a software developer with a passion for learning and creating, using my background in communications, management, and a love of technology to solve problems and build applications.',
+  images: [
+    {
+      url: '/images/portrait.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Topher Ludlow - Software Developer',
+    },
+  ],
+  type: 'website',
+  },
 }
 
 export default function RootLayout({ children }) {
