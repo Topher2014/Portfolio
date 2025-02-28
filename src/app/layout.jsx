@@ -1,5 +1,6 @@
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
+import ogImage from './og-image.jpg'
 
 import '@/styles/tailwind.css'
 
@@ -20,7 +21,7 @@ export const metadata = {
     openGraph: {
     images: [
       {
-        url: '/images/og-image.jpg', // Path relative to your public directory
+        url: ogImage.src,
         width: 1200,
         height: 630,
         alt: 'Topher Ludlow - Software Developer',
