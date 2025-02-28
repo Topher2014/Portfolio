@@ -18,15 +18,7 @@ export const metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
-    openGraph: {
-    images: [
-      {
-        url: ogImage.src,
-        width: 1200,
-        height: 630,
-        alt: 'Topher Ludlow - Software Developer',
-      },
-    ],
+  openGraph: {
     type: 'website',
   },
 }
