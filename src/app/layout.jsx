@@ -4,6 +4,7 @@ import { Layout } from '@/components/Layout'
 import '@/styles/tailwind.css'
 
 export const metadata = {
+  metadataBase: new URL("https://topherludlow.com"),
   title: {
     template: '%s - Topher Ludlow ',
     default:
@@ -17,17 +18,7 @@ export const metadata = {
     },
   },
   openGraph: {
-  title: 'Topher Ludlow - Software Developer',
-  description: 'I am a software developer with a passion for learning and creating, using my background in communications, management, and a love of technology to solve problems and build applications.',
-  images: [
-    {
-      url: 'https://topherludlow.com/images/portrait.jpg',
-      width: 1200,
-      height: 630,
-      alt: 'Topher Ludlow - Software Developer',
-    },
-  ],
-  type: 'website',
+    type: 'website',
   },
 }
 
