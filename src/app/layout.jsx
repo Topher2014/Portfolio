@@ -1,6 +1,5 @@
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
-import ogImage from './og-image.jpg'
 
 import '@/styles/tailwind.css'
 
