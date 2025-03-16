@@ -199,9 +199,7 @@ export default async function Home() {
             Software developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I am a software developer with a passion for learning and creating, using my background in communications, 
-            management, and a love of technology to solve problems and build applications. I am always looking for work 
-            opportunities to develop websites and applications using the most efficient tools and platforms that meet your requirements. 
+            I am a results-driven Full Stack Software Developer with expertise in NextJS, ExpressJS, PostgreSQL and RESTful APIs, specializing in creating robust applications that seamlessly integrate across web and mobile platforms. My experience ranges from architecting music streaming platforms and e-commerce solutions to volunteering for humanitarian aid logistics in Ukraine, showcasing my commitment to leveraging technology for meaningful impact. With a military background as a Signal Support Systems Specialist and formal education from Flatiron School, I bring a unique blend of technical discipline and creative problem-solving to every project. I excel at translating complex business requirements into elegant technical solutions, focusing on performance, security, and scalability while collaborating effectively across diverse teams. Even during my personal time, I'm immersed in code, constantly exploring new technologies and building side projects that fuel my passion for development while sharpening the skills I bring to every professional engagement.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
