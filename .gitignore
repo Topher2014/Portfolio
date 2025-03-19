@@ -9,6 +9,9 @@ package-lock.json
 # testing
 /coverage
 
+# images
+/src/images
+
 # next.js
 /.next/
 /out/

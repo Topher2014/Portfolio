@@ -7,6 +7,7 @@ import { Container } from '@/components/Container'
 import {
   GitHubIcon,
   LinkedInIcon,
+  EmailIcon,
 } from '@/components/SocialIcons'
 import logoTlservices from '@/images/logos/tlservices.png'
 import logoAidSupply from '@/images/logos/aidsupply.png'
@@ -55,10 +56,23 @@ function ArrowDownIcon(props) {
   )
 }
 
-function SocialLink({ icon: Icon, ...props }) {
+// function SocialLink({ icon: Icon, ...props }) {
+//   return (
+//     <Link className="group -m-1 p-1" {...props}>
+//       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+//     </Link>
+//   )
+// }
+
+function SocialLink({ icon: Icon, children, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link className="group -m-1 p-1 flex items-center" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      {children && (
+        <span className="ml-2 text-sm text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-200">
+          {children}
+        </span>
+      )}
     </Link>
   )
 }
@@ -216,6 +230,13 @@ export default async function Home() {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
+            <SocialLink
+              href="mailto:topherludlow@protonmail.com"
+              aria-label="Send an email"
+              icon={EmailIcon}
+            >
+              topherludlow@protonmail.com
+            </SocialLink>
           </div>
         </div>
       </Container>
