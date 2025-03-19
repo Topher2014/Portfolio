@@ -14,11 +14,6 @@ import logoAidSupply from '@/images/logos/aidsupply.png'
 import logoEmsa from '@/images/logos/emsa.png'
 import logoGlasshouse from '@/images/logos/glasshouse.png'
 import logoArmy from '@/images/logos/army.png'
-import image1 from '@/images/photos/washington.jpg'
-import image2 from '@/images/photos/huskies.jpg'
-import image3 from '@/images/photos/portrait.jpg'
-import image4 from '@/images/photos/keyboard.jpg'
-import image5 from '@/images/photos/glacier.jpg'
 
 function BriefcaseIcon(props) {
   return (
@@ -55,14 +50,6 @@ function ArrowDownIcon(props) {
     </svg>
   )
 }
-
-// function SocialLink({ icon: Icon, ...props }) {
-//   return (
-//     <Link className="group -m-1 p-1" {...props}>
-//       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-//     </Link>
-//   )
-// }
 
 function SocialLink({ icon: Icon, children, ...props }) {
   return (
@@ -176,12 +163,35 @@ function Resume() {
 }
 
 function Photos() {
+  const images = [
+    {
+      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/1.jpg?raw=true', 
+      alt: 'Washington scene'
+    },
+    {
+      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/2.jpg?raw=true', 
+      alt: 'Huskies'
+    },
+    {
+      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/3.jpg?raw=true', 
+      alt: 'Portrait photo'
+    },
+    {
+      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/4.jpg?raw=true', 
+      alt: 'Keyboard'
+    },
+    {
+      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/5.jpg?raw=true', 
+      alt: 'Glacier'
+    }
+  ];
+  
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
+  
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {images.map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -190,10 +200,12 @@ function Photos() {
             )}
           >
             <Image
-              src={image}
-              alt=""
+              src={image.src}
+              alt={image.alt}
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
+              width={288}  
+              height={320}
               unoptimized
             />
           </div>
