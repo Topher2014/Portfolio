@@ -9,6 +9,7 @@ import {
   LinkedInIcon,
   EmailIcon,
 } from '@/components/SocialIcons'
+import logoColumbia from '@/images/logos/columbia.jpg'
 import logoTlservices from '@/images/logos/tlservices.png'
 import logoAidSupply from '@/images/logos/aidsupply.png'
 import logoEmsa from '@/images/logos/emsa.png'
@@ -103,6 +104,16 @@ function Role({ role }) {
 
 function Resume() {
   let resume = [
+    {
+      company: 'Columbia University',
+      title: 'Technical Instructor',
+      logo: logoColumbia,
+      start: '2025',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
     {
       company: 'TL Services',
       title: 'Software Developer',
