@@ -214,10 +214,12 @@ function Photos() {
               src={image.src}
               alt={image.alt}
               sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-cover rendering-crisp-edges"
               width={288}  
               height={320}
+              quality={90}
               unoptimized
+              loading="eager"
             />
           </div>
         ))}
