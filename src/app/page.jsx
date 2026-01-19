@@ -9,9 +9,10 @@ import {
   LinkedInIcon,
   EmailIcon,
 } from '@/components/SocialIcons'
-import logoColumbia from '@/images/logos/columbia.jpg'
 import logoTlservices from '@/images/logos/tlservices.png'
+import logoColumbia from '@/images/logos/columbia.jpg'
 import logoAidSupply from '@/images/logos/aidsupply.png'
+import logoBaseBeta from '@/images/logos/basebeta.png'
 import logoEmsa from '@/images/logos/emsa.png'
 import logoGlasshouse from '@/images/logos/glasshouse.png'
 import logoArmy from '@/images/logos/army.png'
@@ -105,16 +106,6 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Columbia University',
-      title: 'Technical Instructor',
-      logo: logoColumbia,
-      start: '2025',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
-    },
-    {
       company: 'TL Services',
       title: 'Software Developer',
       logo: logoTlservices,
@@ -125,11 +116,25 @@ function Resume() {
       },
     },
     {
+      company: 'Columbia University',
+      title: 'Technical Instructor',
+      logo: logoColumbia,
+      start: '2025',
+      end: '2025',
+    },
+    {
       company: 'Aid Supply',
       title: 'Software Developer',
       logo: logoAidSupply,
       start: '2024',
       end: '2023',
+    },
+    {
+      company: 'BaseBeta',
+      title: 'Software Developer',
+      logo: logoBaseBeta,
+      start: '2023',
+      end: '2022',
     },
     {
       company: 'Emergency Medical Services Authority',
