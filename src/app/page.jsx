@@ -9,6 +9,7 @@ import {
   LinkedInIcon,
   EmailIcon,
 } from '@/components/SocialIcons'
+import logoCDT from '@/images/logos/cdt.png'
 import logoTlservices from '@/images/logos/tlservices.png'
 import logoColumbia from '@/images/logos/columbia.jpg'
 import logoAidSupply from '@/images/logos/aidsupply.png'
@@ -106,14 +107,18 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
+      company: 'California Department of Technology',
+      title: 'Information Technology Specialist',
+      logo: logoCDT,
+      start: '2026',
+      end: 'Present',
+    },
+    {
       company: 'TL Services',
       title: 'Software Developer',
       logo: logoTlservices,
       start: '2021',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
+      end: 'Present',
     },
     {
       company: 'Columbia University',
