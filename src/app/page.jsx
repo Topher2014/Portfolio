@@ -184,7 +184,7 @@ function Photos() {
     { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/2.jpg', alt: 'Huskies' },
     { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/3.jpg', alt: 'Portrait photo' },
     { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/4.jpg', alt: 'Keyboard' },
-    { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/5.jpg', alt: 'Glacier' },
+    { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/5.jpg', alt: 'Glacier' }
   ];
   
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
