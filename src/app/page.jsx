@@ -180,26 +180,11 @@ function Resume() {
 
 function Photos() {
   const images = [
-    {
-      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/1.jpg?raw=true', 
-      alt: 'Washington scene'
-    },
-    {
-      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/2.jpg?raw=true', 
-      alt: 'Huskies'
-    },
-    {
-      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/3.jpg?raw=true', 
-      alt: 'Portrait photo'
-    },
-    {
-      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/4.jpg?raw=true', 
-      alt: 'Keyboard'
-    },
-    {
-      src: 'https://github.com/Topher2014/PortfolioImages/blob/main/images/photos/5.jpg?raw=true', 
-      alt: 'Glacier'
-    }
+    { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/1.jpg', alt: 'Washington scene' },
+    { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/2.jpg', alt: 'Huskies' },
+    { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/3.jpg', alt: 'Portrait photo' },
+    { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/4.jpg', alt: 'Keyboard' },
+    { src: 'https://raw.githubusercontent.com/Topher2014/PortfolioImages/main/images/photos/5.jpg', alt: 'Glacier' },
   ];
   
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
